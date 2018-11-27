@@ -2,7 +2,7 @@
 The goal of this repository is to provide an easy way of generating triples from JSON/CSV sources and extend an extisting RDF triplestore.
 The input must be a CSV/JSON file, as well as a pickle file for the mapping of the variables to find in the CDV/JSON file, and an ontological scheme of tose variables, in RDF.
 
-![alt text](https://raw.githubusercontent.com/klotzbenjamin/rdf-generator/master/architecture.png)
+![alt text](https://github.com/klotzbenjamin/rdf-generator/blob/master/architecture.PNG?raw=true)
 
 ## Installation
 You will need to install RDFlib in order to use this code.
