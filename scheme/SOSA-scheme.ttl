@@ -1,0 +1,19 @@
+@prefix ns1: <http://www.w3.org/ns/sosa/> .
+@prefix ns2: <http://www.qudt.org/1.1/schema/qudt#> .
+@prefix ns3: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+[] a ns1:Observation ;
+    ns3:lat ":var1"^^xsd:long ;
+    ns3:long ":var2"^^xsd:long ;
+    ns1:PhenomenonTime ":var3"^^xsd:dateTime ;
+    ns1:hasFeatureOfInterest :cst1 ;
+    ns1:hasResult [ a ns2:QuantityValue ;
+            ns2:numericValue ":var4"^^:cst2] ;
+    ns1:observedProperty :cst3 .
+
+

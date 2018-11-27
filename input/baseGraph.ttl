@@ -1,0 +1,39 @@
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix qudt: <http://www.qudt.org/1.1/schema/qudt#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vsso: <http://automotive.eurecom.fr/vsso#> .
+
+<http://automotive.eurecom.fr/simulator/vehicle> a vsso:Vehicle .
+<http://automotive.eurecom.fr/simulator/signal/speed> a vsso:VehicleSpeed .
+
+[] a sosa:Observation ;
+    geo:lat "42.292834"^^xsd:long ;
+    geo:long "-83.237275"^^xsd:long ;
+    sosa:PhenomenonTime "2018-11-19 15:21:38"^^xsd:dateTime ;
+    sosa:hasFeatureOfInterest <http://automotive.eurecom.fr/simulator/vehicle> ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            qudt:numericValue "25.0"^^xsd:int ] ;
+    sosa:observedProperty <http://automotive.eurecom.fr/simulator/signal/speed> .
+
+[] a sosa:Observation ;
+    geo:lat "42.292834"^^xsd:long ;
+    geo:long "-83.237275"^^xsd:long ;
+    sosa:PhenomenonTime "2018-11-19 15:21:43"^^xsd:dateTime ;
+    sosa:hasFeatureOfInterest <http://automotive.eurecom.fr/simulator/vehicle> ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            qudt:numericValue "28.0"^^xsd:int ] ;
+    sosa:observedProperty <http://automotive.eurecom.fr/simulator/signal/speed> .
+
+[] a sosa:Observation ;
+    geo:lat "42.292834"^^xsd:long ;
+    geo:long "-83.237275"^^xsd:long ;
+    sosa:PhenomenonTime "2018-11-19 15:21:50"^^xsd:dateTime ;
+    sosa:hasFeatureOfInterest <http://automotive.eurecom.fr/simulator/vehicle> ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            qudt:numericValue "31.0"^^xsd:int ] ;
+    sosa:observedProperty <http://automotive.eurecom.fr/simulator/signal/speed> .
+
